@@ -1,6 +1,9 @@
 # PyPass
+
 This is a Wordlist generator for Dictionary attacks or brute force attack.
+
 Hello PyPass users.
+
  I hope you are trying for a tool that can generate passwords for Dictionary attack or Brute force attack.
   Then this tool is for you. By using this tool you can generate all type of Passwords.
   You can even use specific characters, password length and file path and name.
@@ -8,9 +11,13 @@ Hello PyPass users.
   To use this tool first you have to run these commands.
 
   pkg install python
+ 
   pip install termcolor
+  
   git clone https://github.com/Equation-Tracker/PyPass/
+  
   cd Passlist
+  
   python PyPass.py
 
   However, if you want to use this in python compiler then download the full folder from github.
