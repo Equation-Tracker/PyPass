@@ -32,6 +32,7 @@ except:
 cprint(f"Making wordlist with {int(Total_Pass)} words. Process starting withing 5 seconds.",'blue')
 time.sleep(4)
 start = time.time()
+count = 0
 cprint("Processing...",'cyan')
 for x in range(Minima, Maxima + 1):
     words = product(Characters,repeat = x)
@@ -39,6 +40,9 @@ for x in range(Minima, Maxima + 1):
         word = "".join(i)
         file.write(word)
         file.write('\n')
+        count += 1
+        if count % (Total_Pass/10) == 0:
+            cprint(f"{int(count/Total_Pass*100)} % completed...",'blue')
 file.close()
 end = time.time()
 TIME = end - start
